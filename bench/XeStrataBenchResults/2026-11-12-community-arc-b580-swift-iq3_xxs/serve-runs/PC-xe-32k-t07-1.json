@@ -1,0 +1,54 @@
+{
+ "gpu": "PC",
+ "arm": "xe",
+ "tier": "32k",
+ "mode": "t07",
+ "round": 1,
+ "turns": [
+  {
+   "generated": 64,
+   "prompt": 31566,
+   "prompt_ms": 24868.7,
+   "decode_ms": 1252.8,
+   "finish": "stop",
+   "accepted": 43,
+   "offered": 55,
+   "reused": 0,
+   "read": 31566
+  },
+  {
+   "generated": 67,
+   "prompt": 31651,
+   "prompt_ms": 244.0,
+   "decode_ms": 1132.0,
+   "finish": "stop",
+   "accepted": 46,
+   "offered": 60,
+   "reused": 31630,
+   "read": 21
+  },
+  {
+   "generated": 61,
+   "prompt": 31745,
+   "prompt_ms": 299.5,
+   "decode_ms": 1094.8,
+   "finish": "stop",
+   "accepted": 40,
+   "offered": 60,
+   "reused": 31719,
+   "read": 26
+  },
+  {
+   "generated": 70,
+   "prompt": 31832,
+   "prompt_ms": 255.4,
+   "decode_ms": 1116.9,
+   "finish": "stop",
+   "accepted": 48,
+   "offered": 60,
+   "reused": 31808,
+   "read": 24
+  }
+ ],
+ "why": null
+}

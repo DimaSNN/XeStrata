@@ -1,0 +1,9 @@
+{
+ "gpu": "PC",
+ "arm": "xe",
+ "round": 0,
+ "context": 204800,
+ "temperature": 0.7,
+ "turns": [],
+ "why": "the server ended while loading"
+}

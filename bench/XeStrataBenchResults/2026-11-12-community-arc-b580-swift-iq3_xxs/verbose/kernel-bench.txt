@@ -1,0 +1,12 @@
+# default: <repo>/engine/strata --kernel-bench --pack <data>/packs/swift-iq3_xxs
+KB dense-bf16 oneMath (oneMKL), XeStrata's own kernels (XMX) for the rest 4096x10240x2560 2121.3
+KB expert-gate-up int8-matrix 16x64x1280x2560:t17 324.2
+KB expert-down int8-matrix 16x64x2560x640:t17 183.4
+# no-xmx: <repo>/engine/strata --kernel-bench --pack <data>/packs/swift-iq3_xxs
+KB dense-bf16 oneMath (oneMKL), XeStrata's own kernels (DP4a) for the rest 4096x10240x2560 2119.5
+KB expert-gate-up off - -
+KB expert-down off - -
+# no-bf16-mma: <repo>/engine/strata --kernel-bench --pack <data>/packs/swift-iq3_xxs
+KB dense-bf16 oneMath (oneMKL), XeStrata's own kernels (XMX) for the rest 4096x10240x2560 2579.3
+KB expert-gate-up int8-matrix 16x64x1280x2560:t17 324.5
+KB expert-down int8-matrix 16x64x2560x640:t17 182.5
