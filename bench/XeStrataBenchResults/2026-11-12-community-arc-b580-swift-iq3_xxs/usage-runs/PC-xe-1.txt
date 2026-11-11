@@ -1,0 +1,35 @@
+loading the model (the first start takes a minute or two) ...
+[strata] starting the engine: reading the model's weights ...
+Traceback (most recent call last):
+  File "<repo>/serve/server.py", line 9111, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "<repo>/serve/server.py", line 8845, in main
+    engine = StrataEngine(exe, engine_args(cfg) + (effort_end or []), cwd=cfg.get("cwd"), log=cfg.get("log"),
+                          env=env, lazy=lazy)
+  File "<repo>/serve/server.py", line 1026, in __init__
+    raise EngineDied(why + (f" (see {log})" if log else "") + note +
+                     start_failure_hint(log, log_start) + tail)
+EngineDied: the engine exited before it was ready (exit code 2) (see <repo>/xestrata-swift-iq3_xxs.log)
+the engine process ended: exit code 2
+the engine log's last lines:
+                         worker; nothing is done when none is spare) or a CPU list such as 24,26 (Linux; the
+                         host's and the workers' CPUs are dropped from it).  Moves threads only, never a
+                         result.  STRATA_AUX_CPUS sets it too; a request's strata_tune aux_cpus=0|1 beats it.
+    --pool-tasks N       Batched CPU expert tasks per GU/Down phase (0..4096). Default 0 =
+                         3 per participating thread; positive counts are capped by row count.
+    --mmap-experts       the low-RAM mode: the experts from the files through the OS page cache
+                         (experts.bin, or a native pack's GGUF files in place) instead of a
+                         copy of them all in RAM; the GPU cache holds the most used
+    --resident-budget-gib N  with it: the experts the GPU cache does not hold copied into RAM
+                         in the profile's order while they fit N GiB (at most the free RAM
+                         less 8 GiB); the rest are read from the files
+    --resident-experts   the same with as much RAM as is free (less 8 GiB)
+    --resident-cpu-experts  cache the static GPU cache's misses in ordinary RAM (with --mmap-experts)
+    --shared-expert-arena FILE  share completed expert weights between Linux processes
+    --coupled-draft / --no-coupled-draft  sample MTP drafts with the target's chain (default: off)
+    --adapt-min-gain F   the adaptive tier swaps an expert in only when its decayed routing count
+                         beats the one it replaces by more than F (default 1.5; higher = fewer swaps)
+    --adapt-async 0|1    --serve with the resident RAM mode: the adaptive tier's swaps advance
+                         between verify windows instead of a window waiting for a whole round (on
+                         by default where it applies; not bit-exact run to run). 0 = the blocking tier.

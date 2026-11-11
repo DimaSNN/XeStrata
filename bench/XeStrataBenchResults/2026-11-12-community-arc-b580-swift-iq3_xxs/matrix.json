@@ -1,0 +1,80 @@
+[
+ {
+  "gpu": "PC",
+  "arm": "xe",
+  "engine": "XeStrata 0.2.8-1",
+  "tier": "1k",
+  "round": 1,
+  "prompt_tokens": 1016,
+  "prefill_tok_s": 445.29,
+  "decoded": 256,
+  "decode_tok_s": 50.03,
+  "spec_accept": 0.753,
+  "stopped": null
+ },
+ {
+  "gpu": "PC",
+  "arm": "xe",
+  "engine": "XeStrata 0.2.8-1",
+  "tier": "1k",
+  "round": 2,
+  "prompt_tokens": 1016,
+  "prefill_tok_s": 441.13,
+  "decoded": 256,
+  "decode_tok_s": 53.75,
+  "spec_accept": 0.784,
+  "stopped": null
+ },
+ {
+  "gpu": "PC",
+  "arm": "xe",
+  "engine": "XeStrata 0.2.8-1",
+  "tier": "32k",
+  "round": 1,
+  "prompt_tokens": 31565,
+  "prefill_tok_s": 1276.86,
+  "decoded": 256,
+  "decode_tok_s": 50.14,
+  "spec_accept": 0.762,
+  "stopped": null
+ },
+ {
+  "gpu": "PC",
+  "arm": "xe",
+  "engine": "XeStrata 0.2.8-1",
+  "tier": "32k",
+  "round": 2,
+  "prompt_tokens": 31565,
+  "prefill_tok_s": 1276.32,
+  "decoded": 256,
+  "decode_tok_s": 50.19,
+  "spec_accept": 0.762,
+  "stopped": null
+ },
+ {
+  "gpu": "PC",
+  "arm": "xe",
+  "engine": "XeStrata 0.2.8-1",
+  "tier": "64k",
+  "round": 1,
+  "prompt_tokens": 64161,
+  "prefill_tok_s": 1271.45,
+  "decoded": 256,
+  "decode_tok_s": 52.04,
+  "spec_accept": 0.832,
+  "stopped": null
+ },
+ {
+  "gpu": "PC",
+  "arm": "xe",
+  "engine": "XeStrata 0.2.8-1",
+  "tier": "64k",
+  "round": 2,
+  "prompt_tokens": 64161,
+  "prefill_tok_s": 1271.28,
+  "decoded": 256,
+  "decode_tok_s": 52.07,
+  "spec_accept": 0.832,
+  "stopped": null
+ }
+]

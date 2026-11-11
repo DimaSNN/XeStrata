@@ -1,0 +1,16 @@
+# <repo>/engine/strata --hw-bench --pack <data>/packs/swift-iq3_xxs --native <data>/models/swift-IQ3_XXS/Swift-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf
+HW ram_threads 10
+HW ram_read_gb_s 43.54
+HW ram_read_1t_gb_s 29.55
+HW h2d_gb_s 13.99
+HW d2h_gb_s 14.28
+HW h2d_pageable_gb_s 12.94
+HW d2h_pageable_gb_s 14.28
+HW gpus 1
+HW gpu0_name Intel(R)_Arc(TM)_B580_Graphics
+HW gpu0_h2d_gb_s 13.99
+HW gpu0_d2h_gb_s 14.28
+HW gpu0_copy_64k_us 16.1
+HW gpu0_launch_us 11.2
+HW ssd_read_gb_s 3.54
+HW ssd_read_gib 4.00

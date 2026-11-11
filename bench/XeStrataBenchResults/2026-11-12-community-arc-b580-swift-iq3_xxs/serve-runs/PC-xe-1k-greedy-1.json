@@ -1,0 +1,54 @@
+{
+ "gpu": "PC",
+ "arm": "xe",
+ "tier": "1k",
+ "mode": "greedy",
+ "round": 1,
+ "turns": [
+  {
+   "generated": 256,
+   "prompt": 1017,
+   "prompt_ms": 2381.1,
+   "decode_ms": 4011.0,
+   "finish": "length",
+   "accepted": 173,
+   "offered": 218,
+   "reused": 0,
+   "read": 1017
+  },
+  {
+   "generated": 150,
+   "prompt": 1295,
+   "prompt_ms": 254.1,
+   "decode_ms": 1973.1,
+   "finish": "stop",
+   "accepted": 110,
+   "offered": 124,
+   "reused": 1272,
+   "read": 23
+  },
+  {
+   "generated": 154,
+   "prompt": 1472,
+   "prompt_ms": 339.3,
+   "decode_ms": 1858.0,
+   "finish": "stop",
+   "accepted": 120,
+   "offered": 125,
+   "reused": 1444,
+   "read": 28
+  },
+  {
+   "generated": 163,
+   "prompt": 1652,
+   "prompt_ms": 369.8,
+   "decode_ms": 2075.8,
+   "finish": "stop",
+   "accepted": 124,
+   "offered": 136,
+   "reused": 1629,
+   "read": 23
+  }
+ ],
+ "why": null
+}
